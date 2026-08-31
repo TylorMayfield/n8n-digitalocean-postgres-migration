@@ -2,7 +2,15 @@
 
 This repository contains deliberately small, non-destructive checks for a planned migration of a self-hosted n8n instance from SQLite to DigitalOcean Managed PostgreSQL.
 
-Read the complete runbook before using these files: [Migrate n8n from SQLite to PostgreSQL on DigitalOcean with a tested cutover](https://www.tylor.nz/content/migrate-n8n-sqlite-to-postgresql).
+## Read the guide
+
+[Migrate n8n from SQLite to PostgreSQL on DigitalOcean with a tested cutover](https://www.tylor.nz/content/migrate-n8n-sqlite-to-postgresql)
+
+## Disclosure
+
+This README includes a DigitalOcean affiliate link. If you use it, I may earn a commission at no additional cost to you.
+
+[Create a managed PostgreSQL database on DigitalOcean](https://www.awin1.com/cread.php?s=4757508&v=123996&q=601070&r=3054551)
 
 ## What this repository does
 
@@ -41,12 +49,6 @@ docker compose -f docker-compose.test.yml up -d
 psql "postgresql://n8n_app:replace-local-password@127.0.0.1:54329/n8n" -c 'select current_database(), current_user;'
 docker compose -f docker-compose.test.yml down -v
 ```
-
-## Disclosure
-
-I am a DigitalOcean affiliate. This repository contains a DigitalOcean affiliate link. If you use it to create an account or service, I may earn a commission at no extra cost to you.
-
-[Create a managed PostgreSQL database on DigitalOcean](https://www.awin1.com/cread.php?s=4757508&v=123996&q=601070&r=3054551)
 
 ## License
 
