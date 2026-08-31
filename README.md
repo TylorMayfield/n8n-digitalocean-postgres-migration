@@ -2,7 +2,7 @@
 
 This repository contains deliberately small, non-destructive checks for a planned migration of a self-hosted n8n instance from SQLite to DigitalOcean Managed PostgreSQL.
 
-Read the complete runbook before using these files: [Move n8n from SQLite to PostgreSQL on DigitalOcean Without Losing Credentials](https://www.tylor.nz/content/migrate-n8n-sqlite-to-postgresql).
+Read the complete runbook before using these files: [Migrate n8n from SQLite to PostgreSQL on DigitalOcean with a tested cutover](https://www.tylor.nz/content/migrate-n8n-sqlite-to-postgresql).
 
 ## What this repository does
 
