@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: n8n
+      POSTGRES_USER: n8n_app
+      POSTGRES_PASSWORD: replace-local-password
+    ports:
+      - "127.0.0.1:54329:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U n8n_app -d n8n"]
+      interval: 5s
+      timeout: 5s
+      retries: 10

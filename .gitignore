@@ -1,0 +1,6 @@
+migration.env
+.env
+*.age
+*.tar
+*.tar.gz
+*.sql
