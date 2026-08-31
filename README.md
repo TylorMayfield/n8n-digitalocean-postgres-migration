@@ -9,8 +9,9 @@ Read the complete runbook before using these files: [Migrate n8n from SQLite to 
 - Checks that the local n8n data directory and a named recovery archive exist before a change window.
 - Checks a PostgreSQL connection and records basic database facts after cutover.
 - Provides a local PostgreSQL container for testing connection details.
+- Includes a PostgreSQL environment-variable template and a Compose override that mounts a directory for the n8n entity export.
 
-It does not export or import n8n workflows or credentials. Those actions depend on the n8n version in use and can damage a production instance when guessed. Follow the current n8n documentation and test the exact procedure in isolation first.
+The scripts do not export or import n8n workflows or credentials. The Compose override supports n8n's own `export:entities` and `import:entities` commands, which the article walks through for this migration. Test the exact procedure in isolation first.
 
 ## Use it
 
@@ -24,6 +25,12 @@ cp migration.env.example migration.env
 ```
 
 The scripts read the connection URL from `migration.env`. Do not commit that file. Use the connection details from the DigitalOcean control panel and restrict the cluster's trusted sources to the n8n server and temporary administrator access.
+
+## Files to merge into your deployment
+
+`n8n-postgres.env.example` lists the PostgreSQL values n8n reads. Merge them into the existing `.env` file next to your Compose file. Do not replace that file. It also contains the existing n8n hostname, webhook, and encryption-key settings. Preserve `N8N_ENCRYPTION_KEY` exactly as it is.
+
+`compose.migration.yml` mounts `./migration-entities` into the n8n container at `/migration`. Use it with your existing Compose file while you run `n8n export:entities` from SQLite, then `n8n import:entities` into a new, empty PostgreSQL database. The article has the exact sequence and safety checks.
 
 ## Local test database
 
