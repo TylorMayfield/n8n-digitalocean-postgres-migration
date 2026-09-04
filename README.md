@@ -4,13 +4,13 @@ This repository contains deliberately small, non-destructive checks for a planne
 
 ## Read the guide
 
-[Migrate n8n from SQLite to PostgreSQL on DigitalOcean with a tested cutover](https://www.tylor.nz/content/migrate-n8n-sqlite-to-postgresql)
+[Migrate n8n from SQLite to PostgreSQL on DigitalOcean with a tested cutover](https://www.tylor.nz/content/migrate-n8n-sqlite-to-postgresql?utm_source=github&utm_medium=referral&utm_campaign=digitalocean-guides&utm_content=companion-readme)
 
 ## Disclosure
 
 This README includes a DigitalOcean affiliate link. If you use it, I may earn a commission at no additional cost to you.
 
-[Create a managed PostgreSQL database on DigitalOcean](https://www.awin1.com/cread.php?s=4757508&v=123996&q=601070&r=3054551)
+[Create a managed PostgreSQL database on DigitalOcean](https://www.tylor.nz/go/digitalocean?utm_source=github&utm_medium=affiliate&utm_campaign=digitalocean-guides&utm_content=migrate-n8n-sqlite-to-postgresql&product=managed-postgresql&placement=companion-readme&variant=readme-primary&locale=en)
 
 ## What this repository does
 
