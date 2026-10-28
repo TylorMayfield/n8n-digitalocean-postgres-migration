@@ -4,13 +4,13 @@ This repository contains deliberately small, non-destructive checks for a planne
 
 ## Read the guide
 
-[Migrate n8n from SQLite to PostgreSQL on DigitalOcean with a tested cutover](https://www.tylor.nz/content/migrate-n8n-sqlite-to-postgresql?utm_source=github&utm_medium=referral&utm_campaign=digitalocean-guides&utm_content=companion-readme)
+[Rehearse an n8n migration from SQLite to PostgreSQL on DigitalOcean](https://www.tylor.nz/content/migrate-n8n-sqlite-to-postgresql?utm_source=github&utm_medium=referral&utm_campaign=digitalocean-guides&utm_content=companion-readme)
 
 ## Disclosure
 
 This README includes a DigitalOcean affiliate link. If you use it, I may earn a commission at no additional cost to you.
 
-[Create a managed PostgreSQL database on DigitalOcean](https://www.tylor.nz/go/digitalocean?utm_source=github&utm_medium=affiliate&utm_campaign=digitalocean-guides&utm_content=migrate-n8n-sqlite-to-postgresql&product=managed-postgresql&placement=companion-readme&variant=readme-primary&locale=en)
+[Compare Managed PostgreSQL plans for your n8n instance](https://www.tylor.nz/go/digitalocean?utm_source=github&utm_medium=affiliate&utm_campaign=digitalocean-guides&utm_content=migrate-n8n-sqlite-to-postgresql&product=managed-postgresql&placement=companion-readme&variant=readme-primary&locale=en). Confirm the cluster's current price and budget for the rehearsal before creating it. Run the migration procedure on an isolated copy before scheduling a cutover.
 
 ## What this repository does
 
